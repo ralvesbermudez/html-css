@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin: 10px auto
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px 1px rgba(128, 128, 128, 0.651);
+        }
+
+        main {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px 1px rgba(128, 128, 128, 0.651);
+        }
+
+        article {
+            background-color: lightgray;
+        }
+
+        a {
+            background-color: lightgray;
+            color: black;
+            margin-right: 20px;
+        }
+
+        nav {
+            background-color: lightgray;
+            padding: 3px;
+            box-shadow: 1px 1px 3px 1px rgba(128, 128, 128, 0.651);
+        }
+
+        nav > a {
+            margin: auto;
+            padding: 2px;
+        }
+
+        aside {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            margin: 3px;
+            padding: 2px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Bla bla bla</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ad voluptatem repudiandae harum, velit exercitationem unde enim voluptate sunt numquam quae explicabo! Accusantium aperiam sequi ratione iusto recusandae inventore molestiae!</p>
+            </article>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, est. Incidunt ex ab nulla. At aliquam iste corporis recusandae? Fugiat, nostrum veniam amet cupiditate rem doloribus officiis iure molestiae quia?</p>
+                <aside>
+                    <p>Artigo escrito por BladeX</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Rodrigo.</p>
+    </footer>
+</body>
+</html>
