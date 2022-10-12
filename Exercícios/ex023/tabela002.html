@@ -16,9 +16,16 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-image: linear-gradient(to right, rgb(99, 223, 99),yellow)
+        }
+
         thead > tr > th {
             border: 1px solid rgba(0, 0, 0, 0.700);
-            background-color: rgba(211, 211, 211, 0.500);
+            background-color: rgba(211, 211, 211, 0.700);
             padding: 15px 5px;
         }
         
@@ -29,13 +36,30 @@
             vertical-align: center;
         }
 
-        
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(211, 211, 211, 0.250);
+        }
+
+        tfoot > tr > th {
+            border: 1px solid rgba(0, 0, 0, 0.700);
+            background-color: lightgray;
+            padding: 15px 5px;
+        }
+
+        tfoot > tr > td {
+            border: 1px solid rgba(0, 0, 0, 0.700);
+            padding: 5px 5px;
+            text-align: center;
+            vertical-align: center;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
         Anatomia para tabelas grandes
+        Capition - legenda
         TABLE
             THEAD
                 TR, TD, TH
@@ -43,17 +67,20 @@
                 TR, TD, TH
             TFOOT
                 TR, TD, TH
+        Sempre que for um DADO de tabela = TD
+        Sempre que for um TÍTULO de tabela = TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade Federativa</th>
-                <th>População (2010)</th>
-                <th>População (2021)</th>
-                <th>Mudança</th>
-                <th>% da pop. total</th>
-                <th>País comparável (habitantes)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col">População (2010)</th>
+                <th scope="col">População (2021)</th>
+                <th scope="col">Mudança</th>
+                <th scope="col">% da pop. total</th>
+                <th scope="col">País comparável (habitantes)</th>
             </tr>
         </thead>
         
@@ -302,6 +329,14 @@
                 <td>Luxemburgo (562 958)</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes (2010)</th>
+                <td>190 755 799</td>
+                <th scope="row">Total de habitantes (2021)</th>
+                <td>213.417.639</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
